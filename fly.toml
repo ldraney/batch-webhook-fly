@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for fly-webhook-template on 2025-07-13T09:04:32-06:00
+# fly.toml app configuration file
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'fly-webhook-template'
+app = 'monday-batch-webhook'
 primary_region = 'sea'
 
 [build]
@@ -24,7 +24,7 @@ primary_region = 'sea'
     timeout = '5s'
     grace_period = '10s'
     method = 'GET'
-    path = '/'
+    path = '/api/webhook'
 
 [[vm]]
   size = 'shared-cpu-1x'
