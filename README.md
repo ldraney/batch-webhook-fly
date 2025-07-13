@@ -8,7 +8,7 @@ Production-ready Monday.com webhook service that automatically generates 6-digit
 ✅ **Next.js 14** with App Router and TypeScript  
 ✅ **Fly.io deployment** with auto-scaling  
 ✅ **Docker + docker-compose** for local development  
-✅ **6-digit alphanumeric codes** using nanoid  
+✅ **5-digit alphanumeric codes** using nanoid  
 ✅ **Production observability** with structured logging  
 ✅ **Challenge verification** for Monday.com webhook setup  
 
@@ -84,7 +84,7 @@ fly deploy
 
 1. **Task Creation**: Someone creates a task in your Monday.com board
 2. **Webhook Triggered**: Monday.com sends POST to `/api/webhook`
-3. **Code Generated**: System generates 6-digit code (e.g., "ABC123")
+3. **Code Generated**: System generates 5-digit code (e.g., "ABC12")
 4. **Column Updated**: Code is written to your specified column via Monday.com API
 5. **Logging**: All actions logged for debugging
 
